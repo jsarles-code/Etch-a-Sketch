@@ -1,0 +1,6 @@
+// Use flexbox to make the divs appear as a grid
+#eas-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
