@@ -1,4 +1,4 @@
-//Create a function that will create a grid
+
 function createGrid(){
     let grid = document.createElement('div');
     grid.className = 'eas-grid';
@@ -17,8 +17,8 @@ function createGrid(){
 }
 createGrid();
 //Use flexbox to make the divs appear as a grid
-//Create a function that will change the color of a div when the mouse hovers over it
-function changeColor(){
+//* /Create a function that will change the color of a div when the mouse hovers over it
+/* function changeColor(){
     let cells = document.querySelectorAll('.cell');
     cells.forEach(cell => {
         cell.addEventListener('mouseover', function(e){
@@ -26,4 +26,4 @@ function changeColor(){
         });
     });
 }
-changeColor();
+changeColor(); */ 
