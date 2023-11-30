@@ -1,14 +1,13 @@
-//Create a 16x16 grid of square divs
 //Create a function that will create a grid
 function createGrid(){
     let grid = document.createElement('div');
-    grid.className = 'grid';
+    grid.className = 'eas-grid';
     document.body.appendChild(grid);
-    for (let i = 0; i < 16; i++) {
+    for (let i = 0; ; i++) {
       let row = document.createElement('div');
       row.className = 'row';
       grid.appendChild(row);
-      for (let j = 0; j < 16; j++) {
+      for (let j = 0; ; j++) {
         let cell = document.createElement('div');
         cell.className = 'cell';
         row.appendChild(cell);
@@ -16,7 +15,7 @@ function createGrid(){
     }
     
 }
-createGrid(16,16);
+createGrid();
 //Use flexbox to make the divs appear as a grid
 //Create a function that will change the color of a div when the mouse hovers over it
 function changeColor(){
