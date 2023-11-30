@@ -1,12 +1,9 @@
 # Etch-a-Sketch
  <!-- 
-Create a webpage with a 16x16 grid of square divs.
+Create a webpage with a 16x16 grid of square divs using javascript inside a container div 
+(which can go directly in your HTML).
 
-Create the divs using JavaScript. Don’t try making them by hand with copy and pasting in your HTML file!
-
-It’s best to put your grid squares inside another “container” div (which can go directly in your HTML).
-
-Use flexbox to make the divs appear as a grid (versus just one on each line). Despite the name, do not be tempted to research/use CSS Grid for this as Grid will be taught later after the foundations course. This is an opportunity specifically to get more practice in for flexbox!
+Use flexbox to make the divs appear as a grid
 
 Be careful with borders and margins, as they can adjust the size of the squares!
 
