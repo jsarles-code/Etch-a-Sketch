@@ -1,6 +1,5 @@
 
-// create a grid of divs with a user defined size
-function createGrid(size){
+function createGrid(){
     let grid = document.createElement('div');
     grid.className = 'eas-grid';
     document.body.appendChild(grid);
@@ -17,8 +16,7 @@ function createGrid(size){
 >>>>>>> parent of c244b15 (Update EAS.js)
     
 }
-createGrid(16);
-
+createGrid();
 //Use flexbox to make the divs appear as a grid
 //* /Create a function that will change the color of a div when the mouse hovers over it
 /* function changeColor(){
