@@ -1,22 +1,18 @@
 
-// create a grid of divs with a user defined size
-function createGrid(size){
-    let grid = document.createElement('div');
-    grid.className = 'eas-grid';
-    document.body.appendChild(grid);
-    for (let i = 0; i < size; i++) {
-      let row = document.createElement('div');
-      row.className = 'row';
-      grid.appendChild(row);
-      for (let j = 0; j < size; j++) {
+// create a grid of  divs with user defined size and equal width and height
+function CreateSquareGrid(size){
+    let container = document.querySelector('eas.grid');
+    container.style.gridTemplateColumns = `repeat(${size}, 1fr)`;
+    container.style.gridTemplateRows = `repeat(${size}, 1fr)`;
+    for(let i = 0; i < size*size; i++){
         let cell = document.createElement('div');
-        cell.className = 'cell';
-        row.appendChild(cell);
-      }
+        cell.classList.add('cell');
+        container.appendChild(cell);
     }
-    
+    changeColor();
 }
-createGrid(16);
+
+CreateSquareGrid(16);
 
 //Use flexbox to make the divs appear as a grid
 //* /Create a function that will change the color of a div when the mouse hovers over it
