@@ -1,17 +1,10 @@
 
-// create a grid of  divs with user defined size and equal width and height
-function CreateSquareGrid(size){
-    let container = document.querySelector('eas.grid');
-    container.style.gridTemplateColumns = `repeat(${size}, 1fr)`;
-    container.style.gridTemplateRows = `repeat(${size}, 1fr)`;
-    for(let i = 0; i < size*size; i++){
-        let cell = document.createElement('div');
-        cell.classList.add('cell');
-        container.appendChild(cell);
-    }
-    changeColor();
-}
+//Create a webpage with a 16x16 grid of square divs.
 
+function CreateSquareGrid(size){
+    
+    }
+}
 CreateSquareGrid(16);
 
 //Use flexbox to make the divs appear as a grid
