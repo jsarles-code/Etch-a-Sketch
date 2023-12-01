@@ -1,10 +1,6 @@
 
-<<<<<<< HEAD
-//Create a webpage with a 16x16 grid of square divs.
-
-function CreateSquareGrid(size){
-=======
-function createGrid(){
+// create a grid of divs with a user defined size
+function createGrid(size){
     let grid = document.createElement('div');
     grid.className = 'eas-grid';
     document.body.appendChild(grid);
@@ -20,14 +16,9 @@ function createGrid(){
     }
 >>>>>>> parent of c244b15 (Update EAS.js)
     
-    }
 }
-<<<<<<< HEAD
-CreateSquareGrid(16);
+createGrid(16);
 
-=======
-createGrid();
->>>>>>> parent of c244b15 (Update EAS.js)
 //Use flexbox to make the divs appear as a grid
 //* /Create a function that will change the color of a div when the mouse hovers over it
 /* function changeColor(){
