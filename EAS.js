@@ -13,7 +13,7 @@ function createGrid(){
         row.appendChild(cell);
       }
     }
->>>>>>> parent of c244b15 (Update EAS.js)
+
     
 }
 createGrid();
