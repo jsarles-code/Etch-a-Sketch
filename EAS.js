@@ -19,5 +19,13 @@ function createGrid() {
         container.appendChild(square);
     }
 }
-  
+
+// add a button to the top of the screen that will send the user a popup asking for the number of squares per side for the new grid. Once entered, the existing grid should be removed and a new grid should be generated in the same total space as before (e.g. 960px wide) so that you’ve got a new sketch pad.
+function resizeGrid() {
+    let container = document.querySelector('#container');
+    while (container.firstChild) {
+        container.removeChild(container.firstChild);
+    }
+    createGrid();
+}
 createGrid();
