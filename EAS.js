@@ -11,7 +11,8 @@ function createGrid() {
         square.classList.add('square');
         square.style.width = squareSize;
         square.style.height = squareSize;
-        // Set up a “hover” effect so that the grid divs change color when your mouse passes over them, leaving a (pixelated) trail through your grid like a pen would.
+        // Set up a “hover” effect via a new class so that the grid divs change color when your mouse passes over them, leaving a (pixelated) trail through your grid like a pen would.
+        square.addEventListener("mouseover", changeColor);
         function changeColor() {
             square.style.backgroundColor = "black";
         }
