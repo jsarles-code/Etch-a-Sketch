@@ -27,6 +27,9 @@ function resizeGrid() {
   while (container.firstChild) {
     container.removeChild(container.firstChild);
   }
+  // set max width of container to 960px
+  container.style.maxWidth = "960px";
+  
   createGrid();
 }
 
